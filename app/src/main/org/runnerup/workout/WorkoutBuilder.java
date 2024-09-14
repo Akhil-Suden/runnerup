@@ -280,9 +280,7 @@ public class WorkoutBuilder {
                 trigger.scope = Scope.STEP;
                 trigger.triggerAction.add(new CountdownFeedback(Scope.STEP, step.durationType));
                 step.triggers.add(trigger);
-
-                // Audio feedback
-                createAudioCountdown(step);
+                
             }
 
             switch (step.getIntensity()) {
